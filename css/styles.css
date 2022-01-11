@@ -1,0 +1,49 @@
+body {
+    background-color: grey;
+    height: 100%;
+    margin: 10%;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 50pt;
+    line-height: 50px;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30pt;
+    line-height: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+}
+
+section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 50px;
+
+    box-shadow: 0px 9px 68px 2px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 9px 68px 2px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 9px 68px 2px rgba(0,0,0,0.77);
+}
+
+.horizontal-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.pb {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.toplevel-info {
+    padding-left: 50px;
+}
