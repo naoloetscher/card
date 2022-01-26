@@ -76,3 +76,10 @@ button {
 button:hover {
     background-color: #FF2121;
 }
+
+.b-secondary {
+    background-color: #F9F9F9;
+    border-width: 2px !important;
+    border-color: #131313;
+    color: #131313;
+}
