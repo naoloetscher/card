@@ -1,11 +1,22 @@
+/* Variables */
+
+:root {
+    --on: #131313;
+    --secondary: #777777;
+    --white: #F9F9F9;
+    --accent: #FF2121;
+    --shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    --rounded: 30px;
+  }
+
 
 /* General */
 
 html, body {
-    background-color: #777777;
+    background-color: var(--on);
+    color: var(--on);
     height: 100%;
     margin: 50px 10%;
-    color: #131313;
     max-width: 100%;
 }
 
@@ -19,7 +30,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     line-height: 10px;
-    color: #FF2121;
+    color: var(--accent);
 }
 
 p, a{
@@ -30,14 +41,13 @@ p, a{
 }
 
 section {
-    background-color: #F9F9F9;
-    border-radius: 25px;
+    background-color: var(--white);
+    border-radius: var(--rounded);
     max-width: 1000px;
     margin: auto;
-
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
 
 .Section {
@@ -45,23 +55,23 @@ section {
 }
 
 .off-text {
-    color: #777777;
+    color: var(--secondary);
 }
 
 .PlainLink {
     text-decoration: none;
-    color: #131313;
+    color:var(--on);
     transition: ease 0.3s;
 }
 
 .PlainLink:hover{
-    color:  #FF2121;
+    color:  var(--accent);
+    transform: translatex(3px);
 }
 
 hr {
     width: 100px;
 }
-
 
 /* Head */
 
@@ -70,15 +80,16 @@ hr {
     flex-direction: row;
     align-items: center;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .pb {
-    border-radius: 200px;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
 
 .Name {
@@ -94,7 +105,7 @@ hr {
 }
 
 .InformationIcon {
-    padding-right: 20px ;
+    padding-right: 20px;
 }
 
 /* Links */
@@ -102,20 +113,21 @@ hr {
 .LinkButton {
     display: flex;
     align-items: center;
-    background-color: #F9F9F9;
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
     padding: 0px 50px;
-    border-radius: 25px;
+    border-radius: var(--rounded);
     transition: ease 0.3s;
     text-decoration: none;
-    color: #131313;
+    color: var(--on);
     margin: 25px 0px ;
 }
 
 .LinkButton:hover {
-    color: #FF2121;
+    color: var(--accent);
+    transform: translateY(-3px);
 }
 
 /* Mediaqueries */
