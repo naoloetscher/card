@@ -12,6 +12,11 @@
 
 /* General */
 
+::selection {
+    background: var(--accent);
+    color: var(--on);
+}
+
 html, body {
     background-color: var(--on);
     color: var(--on);
@@ -61,7 +66,7 @@ section {
 .PlainLink {
     text-decoration: none;
     color:var(--on);
-    transition: ease 0.3s;
+    transition: all ease 0.3s;
 }
 
 .PlainLink:hover{
@@ -119,7 +124,7 @@ hr {
     -moz-box-shadow: var(--shadow);
     padding: 0px 50px;
     border-radius: var(--rounded);
-    transition: ease 0.3s;
+    transition: all ease 0.3s;
     text-decoration: none;
     color: var(--on);
     margin: 25px 0px ;
