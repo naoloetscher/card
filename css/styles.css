@@ -34,7 +34,7 @@ h1 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    line-height: 10px;
+    line-height: 35px;
     color: var(--accent);
 }
 
@@ -55,7 +55,7 @@ section {
     -moz-box-shadow: var(--shadow);
 }
 
-.Section {
+.section {
     padding: 25px 50px;
 }
 
@@ -135,6 +135,48 @@ hr {
     transform: translateY(-3px);
 }
 
+/* CV */
+
+.cv-element {
+    border: solid var(--secondary);
+    padding: 25px 50px;
+    border-radius: var(--rounded);
+    transition: all ease 0.3s;
+    text-decoration: none;
+    color: var(--on);
+    margin: 25px 0px ;
+}
+.cv-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.cv-title h2 {
+    color: var(--on);
+    margin: 0;
+}
+.cv-element p {
+    margin: 0;
+}
+.cv-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.cv-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.skill-tag {
+    font-size: 16px;
+    padding: 2px 16px;
+    border: solid var(--secondary);
+    border-radius: var(--rounded);
+}
+
 /* Mediaqueries */
 
 @media screen and (max-width: 1000px) {
@@ -183,6 +225,10 @@ hr {
 
     .Section {
         padding: 25px 30px;
+    }
+
+    .cv-element {
+        padding: 16px 24px;
     }
     
 }
