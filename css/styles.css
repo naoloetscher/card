@@ -8,8 +8,8 @@
     --shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
     --rounded: 30px;
     --stroke-width: 1px;
-  }
-
+    --animation: all ease 0.3s;
+}
 
 /* General */
 
@@ -67,7 +67,7 @@ section {
 .PlainLink {
     text-decoration: none;
     color:var(--on);
-    transition: all ease 0.3s;
+    transition: var(--animation);
 }
 
 .PlainLink:hover{
@@ -125,7 +125,7 @@ hr {
     -moz-box-shadow: var(--shadow);
     padding: 0px 50px;
     border-radius: var(--rounded);
-    transition: all ease 0.3s;
+    transition: var(--animation);
     text-decoration: none;
     color: var(--on);
     margin: 25px 0px ;
@@ -142,11 +142,22 @@ hr {
     border: solid var(--secondary) var(--stroke-width);
     padding: 25px 50px;
     border-radius: var(--rounded);
-    transition: all ease 0.3s;
+    transition: var(--animation);
     text-decoration: none;
     color: var(--on);
     margin: 25px 0px ;
 }
+
+.cv-element a {
+    color: var(--on);
+    transition: var(--animation);
+    text-decoration: none;
+}
+
+.cv-element a:hover {
+    color: var(--accent);
+}
+
 .cv-title {
     display: flex;
     justify-content: space-between;
