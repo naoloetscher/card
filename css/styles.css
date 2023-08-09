@@ -1,14 +1,21 @@
 /* Variables */
 
 :root {
+    /* Color */
     --on: #131313;
     --secondary: #777777;
     --white: #F9F9F9;
     --accent: #FF2121;
+
+    /* Design */
     --shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
     --rounded: 30px;
     --stroke-width: 1px;
     --animation: all ease 0.3s;
+    
+    /* Typography */
+    --title: 'Space Grotesk', sans-serif;
+    --paragraph: 'Open Sans', sans-serif;
 }
 
 /* General */
@@ -27,20 +34,20 @@ html, body {
 }
 
 h1 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--title);
     font-size: 50px;
     line-height: 50px;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--paragraph);
     font-size: 30px;
     line-height: 35px;
     color: var(--accent);
 }
 
 p, a{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--paragraph);
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
